@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Interativo</title>
+    <style>
+        /* Estilos básicos para o menu */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Estilo para fixar o menu no topo */
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: rgb(51, 51, 51);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        /* Estilo dos links do menu */
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #666;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        /* Estilo do botão ativo com formato oval */
+        .menu .active {
+            background-color: #999;
+            color: #333;
+            border-radius: 30px; /* Forma oval */
+            padding: 10px 30px;  /* Ajusta para o botão maior */
+        }
+
+        /* Efeito hover nos botões */
+        .menu a:hover {
+            background-color: #888;
+        }
+
+        /* Empurrar o conteúdo principal para baixo para não ficar atrás do menu */
+        .content {
+            margin-top: 70px; /* Ajuste conforme a altura do menu */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de navegação -->
+    <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="informacoes.html" class="active">Informações</a> <!-- Página ativa -->
+        <a href="videos.html">Vídeos</a>
+        <a href="ajuda.html">Ajuda</a>
+    </nav>
+
+    <!-- Conteúdo principal da página -->
+    <div class="content">
+        <h1>Bem-vindo à Página de Informações</h1>
+        <p>Conteúdo da página...</p>
+    </div>
+
+</body>
+</html>
